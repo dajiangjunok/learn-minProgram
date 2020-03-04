@@ -48,13 +48,15 @@ Page({
    */
   onPullDownRefresh: function () {
 
-  },
-
+  },  
+onPageScroll:function(res){
+  // console.log(res)
+},
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-
+  onReachBottom: function (res) {
+    console.log('滚动到了底部')
   },
 
   /**
