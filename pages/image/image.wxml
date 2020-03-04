@@ -1,0 +1,23 @@
+<!--pages/image/image.wxml-->
+<!-- 1.image 使用 -->
+<!-- 重点 1.这个组件可以写成一个单标签，也可以写成双标签
+          2.默认大小  320*240
+          3.是行内块级元素
+ -->
+<!-- 2.本地图片 可以绝对路径，也可以相对路径 -->
+
+<!-- <image src="../../assets/img/tabbar/home.png" mode="widthFix" />
+<image src="/assets/img/tabbar/home.png" mode="widthFix" /> -->
+<!-- 2.远程图片 -->
+
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="widthFix" />
+
+<!-- 3.获取手机内图片,相机 lazy-load懒加载  上下三屏 bindLoad 图片被加载 -->
+<button bindtap="imgClick">选中图片</button>
+<view wx:for="{{tempFilePaths}}" wx:key="index">
+  <image src="{{item}}" mode="widthFix" lazy-load bindload="imgeLoad" />
+</view>
+
+<!--4.识别图片二维码  show- -->
+
+<image show-menu-by-longpress ></image>

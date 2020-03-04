@@ -1,0 +1,26 @@
+<!--pages/button/button.wxml-->
+<!-- 1.基本使用 块级元素-->
+<button>按钮</button>
+
+<!-- 2.size属性  行内块元素-->
+<button size="mini">按钮1</button>
+<button size="mini">按钮2</button>
+
+<!-- 3.type属性 -->
+<view>
+  <button size="mini" type="primary">按钮1</button>
+  <button size="mini" type="default">按钮2</button>
+  <button size="mini" type="warn">按钮3</button>
+</view>
+<!-- 4.镂空效果 -->
+<button size="mini" plain="{{true}}">按钮1</button>
+
+<!-- 5.disabled  不可用 -->
+<button size="mini"disabled>按钮1</button>
+
+<!-- 6.loading  加载 -->
+<button size="mini" loading>按钮1</button>
+
+
+<!-- 7.hover-class -->
+<button hover-class="hover-button">按钮</button>

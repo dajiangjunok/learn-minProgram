@@ -1,0 +1,12 @@
+<!-- 1.基本使用 view是块级元素-->
+<view>哈哈哈哈</view>
+<view>呵呵呵呵</view>
+
+<!-- 2.hover-class  用户点击时候的样式 -->
+<view hover-class="hover-view">helloworld</view>
+
+<!-- 3.hover-stop-propagation 阻止父级元素点击态（阻止冒泡）  -->
+
+<view class="box1" hover-class="box1-hover"> 
+  <view class="box2" hover-class="box2-hover" hover-stop-propagation>我是box2</view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/text/text.wxml-->
+<!-- 1.基本使用 -->
+<text>helloworld\n</text>
+<text>{{user.name}}\n</text>
+
+<!-- 2.selectable:true 用户长按会选中文本-->
+<text selectable="{{true}}">{{user.age}}\n</text>
+
+<!-- 3.space决定文本空格大小 -->
+<text>hello world\n</text>
+<text space="nbsp">hello world\n</text>  <!--一个英文字符大小-->
+<text space="ensp">hello world\n</text>  <!--半个中文字符大小-->
+<text space="emsp">hello world\n</text>  <!--一个中文字符大小-->
+
+<!-- 4.decode 是否解码 -->
+<text decode>hello &gt; world\n</text>  <!--一个中文字符大小-->
