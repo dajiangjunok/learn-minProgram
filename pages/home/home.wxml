@@ -1,0 +1,5 @@
+<!--pages/home/home.wxml-->
+<text class="head">你好小程序</text>
+<view>
+  <button size="mini">helloworld</button>
+</view>
