@@ -1,5 +1,6 @@
-<!--pages/home/home.wxml-->
-<text class="head">你好小程序</text>
-<view>
-  <button size="mini">helloworld</button>
+<!-- 1.事件处理 -->
+<view class="container" bindtap="handleClick" id="container" data-index="1">
+<button size="mini" bindtap="handleBtnClick" id="btn1">按钮</button>
 </view>
+<button size="mini" bind:tap="handleClick">按钮</button>
+<button size="mini" catch:tap="handleClick">按钮</button>

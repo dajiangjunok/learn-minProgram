@@ -7,7 +7,13 @@ Page({
   data: {
 
   },
-
+  handleClick(ev){
+    console.log(ev)
+    console.log('handleClick被点击了...')
+  },
+  handleBtnClick(){
+    console.log('handleBtnClick被点击了...')
+  },
   /**
    * 生命周期函数--监听页面加载
    */
