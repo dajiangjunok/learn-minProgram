@@ -1,0 +1,12 @@
+var add = function(a,b){
+  return  a + b  
+}
+var toUpper = function(str){
+  return str.toUpperCase()
+}
+var name = 'alger'
+module.exports = {
+  add:add,
+  toUpper:toUpper,
+  name:name
+}

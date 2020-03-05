@@ -1,0 +1,4 @@
+<view>
+  我是页面头部
+   <include src ="./nav.wxml"  />
+</view>

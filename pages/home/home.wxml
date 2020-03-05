@@ -1,5 +1,41 @@
 <!--pages/home/home.wxml-->
+<include src="/template/header.wxml" />
+
+<!-- import form "/template/header.wxml" -->
 <text class="head">你好小程序</text>
 <view>
   <button size="mini">helloworld</button>
+</view>
+
+<template name="tpl">
+  <view>
+    我是模板哈哈哈哈
+  </view>
+</template>
+
+<template is="tpl" />
+
+<include src="/template/footer.wxml" />
+
+<wxs module="info">
+  var toFix = function(number) {
+    return number.toFixed(2)
+  }
+  var foo = "2123"
+  module.exports = {
+    toFix: toFix,
+    foo: foo
+  }
+</wxs>
+<view>
+  {{info.foo}}
+</view>
+<view>
+  {{info.toFix(26.666666)}}
+</view>
+<wxs src="../../tools/toUpperCase.wxs"  module="tools" /> 
+<view>
+    {{tools.name}}
+    {{tools.toUpper('aada')}}
+    {{tools.add(5,6)}}
 </view>

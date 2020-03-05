@@ -1,0 +1,7 @@
+<!--pages/wxml/wxml.wxml-->
+<view>{{nowTime}}</view>
+<!-- <map class="map"  longitude="116.11" latitude="39.6"></map> -->
+
+<view>------------条件判断-------------------------------</view>
+
+<view wx:if="{{isShow}}">helloworld</view>
