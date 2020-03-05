@@ -1,0 +1,21 @@
+<!--pages/input/input.wxml-->
+<!-- 1.基本用法 -->
+<input></input>
+<!-- 2.value  placehold用法 -->
+<input value="你说撒"></input>
+<input placeholder="你说啥"></input>
+<!-- 3.键盘类型  type 默认text  还有 email  number -->
+<input type="number"></input>
+<input type="idcard"></input>
+<input type="digit"></input>
+<!--4. maxlength  默认140   -1不限制 -->
+
+<!--5. confirm-type 规定键盘回车的字符 -->
+<input placeholder="你说啥" confirm-type="send"></input>
+<input placeholder="你说啥" confirm-type="search"></input>
+<input placeholder="你说啥" confirm-type="go"></input>
+<input placeholder="你说啥" confirm-type="next"></input>
+<input placeholder="你说啥" confirm-type="done"></input>
+ 
+ <!-- 6.input绑定事件 -->
+ <input bindinput="handleInput" bindfocus="handleFocus"  bindblur="handleBlur" /> 
