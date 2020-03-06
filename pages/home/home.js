@@ -5,9 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    msgList:['新款','流行','精选'],
+    count:0
   },
-
+  increment(event){
+    console.log(event.detail)
+  },
+  handleSelClick(){
+    const selCpn = this.selectComponent('#sel')
+    // console.log(selCpn)
+    // selCpn.setData({
+    //   count:selCpn.data.count+1
+    // })
+    selCpn.increment(10)   
+  },
   /**
    * 生命周期函数--监听页面加载
    */

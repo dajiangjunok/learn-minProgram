@@ -3,3 +3,6 @@
   /* background-color: red; */
   color: lightblue;
 }
+.red{
+  color: red;
+}

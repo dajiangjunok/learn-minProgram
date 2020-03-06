@@ -1,0 +1,7 @@
+<!--components/my-cpn/my-cpn.wxml-->
+ <view class="cpn">我的组件哈啊哈哈哈哈</view>
+
+ <view>插槽开始--------------------------</view>
+ <view> <slot name="slot1" />  </view>
+ <view> <slot name="slot2" />  </view>
+ <view> <slot name="slot3" />  </view>

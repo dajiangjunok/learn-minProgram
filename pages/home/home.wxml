@@ -3,3 +3,25 @@
 <view>
   <button size="mini">helloworld</button>
 </view>
+<my-cpn />
+
+<my-prop title-class="red" title="我是标题哈哈哈哈哈" content="我是内容呵呵呵呵呵" />
+<my-prop title="Header" content="Content" />
+<my-prop title="66666" content="88888" />
+<view>---------------------</view>
+<tabbar msg="{{msgList}}" />
+
+<view style="margin-top:50rpx;">
+  当前计数：{{count}}
+  <my-button bind:increment="increment" />
+</view>
+<view>---------------外部修改组件内部数据----------</view>
+
+<my-sel id="sel" />
+<button size="mini" type="primary" bind:tap="handleSelClick">按钮</button>
+
+<my-cpn>
+  <view slot="slot2">我是插槽2</view>
+  <slider slot="slot1" ></slider> 
+  <view slot="slot3">我是插槽3</view>
+</my-cpn>

@@ -1,0 +1,8 @@
+<!--components/tabbar/tabbar.wxml-->
+<view class="container" >
+  <block wx:for="{{msg}}" wx:key="index">
+    <view bindtap="handleToggle" data-title="{{item}}" class="item {{currentIndex===index?'active':''}}">
+      <text class="lineBottom">{{item}}</text>
+    </view>
+  </block>
+</view>

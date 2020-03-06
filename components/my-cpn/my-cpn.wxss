@@ -1,0 +1,4 @@
+/* components/my-cpn/my-cpn.wxss */
+.cpn{
+  background-color: orange;
+}
